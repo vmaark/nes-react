@@ -17,11 +17,10 @@
     "test:watch": "react-scripts-ts test --env=jsdom",
     "build": "rollup -c",
     "start": "rollup -c -w",
-    "dev": "npm start",
-    "prepare": "npm run build",
-    "predeploy": "cd example && npm install && npm run build",
-    "deploy": "gh-pages -d example/build",
-    "preinstall": "git submodule update"
+    "dev": "yarn start",
+    "prepare": "yarn build",
+    "predeploy": "cd example && yarn install && yarn build",
+    "deploy": "gh-pages -d example/build"
   },
   "dependencies": {
     "@types/classnames": "^2.2.6",
